@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Dogs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @dogs.each do |dog| %>
+      <p><%= dog.name %></p>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= Toy.first.name %>
+
+<%= link_to 'New Dog', new_dog_path %>
