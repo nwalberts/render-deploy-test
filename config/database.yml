@@ -78,6 +78,16 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+# production:
+#   <<: *default
+#   url: <%= ENV['DATABASE_URL'] %>
+
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  adapter:    "postgresql"
+  name:       "swwxqkzx"
+  host:       "peanut.db.elephantsql.com"
+  user:       "swwxqkzx"
+  port:       "5432"
+  username:   "swwxqkzx"
+  password:   "LWcjLNvNZWBuwxuCR_IeP3S4t6zr65FA
